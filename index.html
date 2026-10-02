@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentor de Carreiras com IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>🤖 MentorIA</h1>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#teste">Teste</a>
+      <a href="#carreiras">Carreiras</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <div>
+        <span class="badge">PROGRAMAÇÃO COM IA</span>
+
+        <h2>
+          Descubra o caminho para o seu
+          <span>futuro profissional</span>
+        </h2>
+
+        <p>
+          Responda algumas perguntas e descubra quais áreas profissionais
+          combinam mais com seus interesses e habilidades.
+        </p>
+
+        <a href="#teste" class="botao">
+          Começar teste
+        </a>
+      </div>
+
+      <div class="robo">🤖</div>
+    </section>
+
+
+    <section id="teste" class="card">
+
+      <h2>🎯 Teste de Perfil Profissional</h2>
+
+      <p>
+        Responda às perguntas abaixo:
+      </p>
+
+      <form id="careerForm">
+
+        <label>1. Qual atividade você mais gosta?</label>
+
+        <select id="interest" required>
+          <option value="">Selecione...</option>
+          <option value="tecnologia">
+            Tecnologia e computadores
+          </option>
+
+          <option value="criatividade">
+            Criar, desenhar e produzir
+          </option>
+
+          <option value="pessoas">
+            Ajudar e trabalhar com pessoas
+          </option>
+
+          <option value="negocios">
+            Negócios e liderança
+          </option>
+
+          <option value="ciencias">
+            Ciência e pesquisa
+          </option>
+        </select>
+
+
+        <label>2. Qual habilidade combina mais com você?</label>
+
+        <select id="skill" required>
+          <option value="">Selecione...</option>
+
+          <option value="logica">
+            Raciocínio lógico
+          </option>
+
+          <option value="criatividade">
+            Criatividade
+          </option>
+
+          <option value="comunicacao">
+            Comunicação
+          </option>
+
+          <option value="lideranca">
+            Liderança
+          </option>
+
+          <option value="analise">
+            Análise e investigação
+          </option>
+        </select>
+
+
+        <label>3. Como você prefere trabalhar?</label>
+
+        <select id="work" required>
+          <option value="">Selecione...</option>
+
+          <option value="computador">
+            Usando tecnologia
+          </option>
+
+          <option value="criativo">
+            Criando projetos
+          </option>
+
+          <option value="equipe">
+            Trabalhando em equipe
+          </option>
+
+          <option value="gestao">
+            Organizando projetos
+          </option>
+
+          <option value="pesquisa">
+            Pesquisando soluções
+          </option>
+        </select>
+
+
+        <label>4. O que você procura em uma carreira?</label>
+
+        <select id="goal" required>
+          <option value="">Selecione...</option>
+
+          <option value="inovacao">
+            Inovação
+          </option>
+
+          <option value="expressao">
+            Criatividade e expressão
+          </option>
+
+          <option value="impacto">
+            Ajudar outras pessoas
+          </option>
+
+          <option value="crescimento">
+            Crescimento profissional
+          </option>
+
+          <option value="descoberta">
+            Conhecimento e descobertas
+          </option>
+        </select>
+
+
+        <button type="submit" class="botao">
+          ✨ Descobrir meu perfil
+        </button>
+
+      </form>
+
+
+      <div id="result" class="resultado escondido"></div>
+
+    </section>
+
+
+    <section id="carreiras">
+
+      <h2>💼 Áreas profissionais</h2>
+
+      <div class="carreiras">
+
+        <div class="carreira">
+          <span>💻</span>
+          <h3>Tecnologia</h3>
+          <p>
+            Programação, desenvolvimento web,
+            dados e inteligência artificial.
+          </p>
+        </div>
+
+        <div class="carreira">
+          <span>🎨</span>
+          <h3>Criatividade</h3>
+          <p>
+            Design, publicidade, audiovisual
+            e produção de conteúdo.
+          </p>
+        </div>
+
+        <div class="carreira">
+          <span>🧑‍🏫</span>
+          <h3>Pessoas</h3>
+          <p>
+            Educação, psicologia, comunicação
+            e áreas sociais.
+          </p>
+        </div>
+
+        <div class="carreira">
+          <span>📊</span>
+          <h3>Negócios</h3>
+          <p>
+            Administração, marketing,
+            empreendedorismo e gestão.
+          </p>
+        </div>
+
+        <div class="carreira">
+          <span>🔬</span>
+          <h3>Ciências</h3>
+          <p>
+            Engenharia, pesquisa,
+            biologia e biotecnologia.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="sobre">
+
+      <h2>🧠 Como funciona?</h2>
+
+      <p>
+        O sistema analisa as respostas fornecidas pelo usuário
+        utilizando JavaScript. Cada resposta adiciona pontos
+        para diferentes áreas profissionais. Ao final,
+        o sistema identifica o perfil com maior pontuação
+        e apresenta algumas carreiras relacionadas.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>
+      Projeto: Programação com IA — Mentor de Carreiras
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
